@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Image Upload</title>
+    <!-- Add any CSS or stylesheets here -->
+</head>
+<body>
+    <h1>Image Upload</h1>
+
+    <!-- Form for uploading images -->
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Upload Image</button>
+    </form>
+
+    <!-- Display uploaded images -->
+    <h2>Uploaded Images</h2>
+    <ul>
+        <% image.forEach(function(image) { %>
+            <li>
+                <img src="<%= image.url %>" alt="<%= image.filename %>" width="150">
+                <p>Filename: <%= image.filename %></p>
+                <p>Size: <%= image.size %> bytes</p>
+            </li>
+        <% }); %>
+    </ul>
+
+    <!-- Add any additional HTML content as needed -->
+
+    <!-- Add any JavaScript scripts here if required -->
+
+</body>
+</html>

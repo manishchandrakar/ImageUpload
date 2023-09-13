@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploaded Images</title>
+</head>
+<body>
+    <h1>List of Uploaded Images</h1>
+    <ul id="imageList">
+        <% data.forEach(function(image) { %>
+            <li>
+                <img src="<%= image.filename %>" alt="<%= image.originalname %>">
+            </li>
+        <% }); %>
+    </ul>
+
+    <script>
+        // JavaScript code can be placed here if needed
+    </script>
+</body>
+</html>

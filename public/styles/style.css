@@ -1,0 +1,58 @@
+/* styles.css */
+
+/* Apply basic styles to the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header, h1, h2 {
+    color: #333;
+    text-align: center; /* Center-align headings */
+}
+
+/* Style the image upload form */
+.upload-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 20px auto; /* Center the form horizontally */
+    max-width: 400px; /* Limit the form width */
+}
+
+.upload-form input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.upload-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the uploaded image list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+li img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add additional styles as needed */
