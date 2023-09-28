@@ -24,8 +24,7 @@ Engage with the community by leaving comments and liking photos that you admire.
 - **Authentication:** Passport.js (for user authentication)
 - **IDE:** Visual Studio Code
 
-## Website Link
-You can access the Image Uploading Site by visiting [this link](https://your-image-uploading-site-url.com/).
+
 
 ## GitHub Repository
 You can find the source code for this image uploading site on [GitHub](https://github.com/yourusername/image-uploading-site).
